@@ -9,17 +9,23 @@
 * Use an AI Assistant, but use a different one then you used from a previous lab (Anthropic's Claud, Bard, Copilot, CodeWhisperer, Colab AI, etc)
 * ETL-Query:  [E] Extract a dataset from URL, [T] Transform, [L] Load into SQLite Database and [Q] Query
 For the ETL-Query lab:
-* [E] Extract a dataset from a URL like Kaggle or data.gov. JSON or CSV formats tend to work well.
-* [T] Transform the data by cleaning, filtering, enriching, etc to get it ready for analysis.
-* [L] Load the transformed data into a SQLite database table using Python's sqlite3 module.
-* [Q] Write and execute SQL queries on the SQLite database to analyze and retrieve insights from the data.
+## [E] Extract a dataset 
+* Extract a dataset from a URL like Kaggle or data.gov. JSON or CSV formats tend to work well.
+* I extracted the data from a dataset hosted on github. 
+* I tried to loaded a kaggle database earlier, but it is protected and requires me to install kaggle package to load the data. But there is some issue with the package. So I resorted to use a github dataset.
+
+## [T] Transform the data 
+* Transform the data by cleaning, filtering, enriching, etc to get it ready for analysis.
+
+
+## [L] Load the transformed data 
+*  Load the transformed data into a SQLite database table using Python's sqlite3 module.
+## [Q] Write and execute SQL queries 
+*  Write and execute SQL queries on the SQLite database to analyze and retrieve insights from the data.
 
 #### Tasks:
 
-* Fork this project and get it to run
-* Make the query more useful and not a giant mess that prints to screen
 * Convert the main.py into a command-line tool that lets you run each step independantly
-* Fork this project and do the same thing for a new dataset you choose
 * Make sure your project passes lint/tests and has a built badge
 * Include an architectural diagram showing how the project works
 
