@@ -1,31 +1,33 @@
 ## SQLite Lab
 
-![4 17-etl-sqlite-RAW](https://github.com/nogibjj/sqlite-lab/assets/58792/b39b21b4-ccb4-4cc4-b262-7db34492c16d)
-
+![image](https://github.com/nogibjj/mini-project5-lisa/assets/46847817/ea1edc79-ee86-4e5e-a224-b484862ae0ae)
 
 
 ### Lab:
 
-* Use an AI Assistant, but use a different one then you used from a previous lab (Anthropic's Claud, Bard, Copilot, CodeWhisperer, Colab AI, etc)
+* Use an AI Assistant, but use a different one than you used from a previous lab (Anthropic's Claud, Bard, Copilot, CodeWhisperer, Colab AI, etc)
 * ETL-Query:  [E] Extract a dataset from URL, [T] Transform, [L] Load into SQLite Database and [Q] Query
 For the ETL-Query lab:
 ## [E] Extract a dataset 
-* Extract a dataset from a URL like Kaggle or data.gov. JSON or CSV formats tend to work well.
-* I extracted the data from a dataset hosted on github. 
-* I tried to loaded a kaggle database earlier, but it is protected and requires me to install kaggle package to load the data. But there is some issue with the package. So I resorted to use a github dataset.
+* Extract a dataset from a URL like Kaggle or data.gov. JSON or CSV formats work well.
+* I extracted the data from a dataset hosted on GitHub. 
+* I tried to load a Kaggle database earlier, but it is protected and requires me to install Kaggle package to load the data. But there is some issue with the package. So I resorted to using a GitHub dataset.
 
 ## [T] Transform the data 
-* Transform the data by cleaning, filtering, enriching, etc to get it ready for analysis.
+* Transform the data by cleaning, filtering, enriching, etc. to get it ready for analysis.
+* In this project, I subset the data into training and test datasets randomly based on a random seed.
 
 
 ## [L] Load the transformed data 
-*  Load the transformed data into a SQLite database table using Python's sqlite3 module.
+*  Load the transformed data into a SQLite database table using Python's SQLite3 module.
+*  Load the two tables, training and test to the dataset separately
+  
 ## [Q] Write and execute SQL queries 
 *  Write and execute SQL queries on the SQLite database to analyze and retrieve insights from the data.
 
 #### Tasks:
 
-* Convert the main.py into a command-line tool that lets you run each step independantly
+* Convert the main.py into a command-line tool that lets you run each step independently
 * Make sure your project passes lint/tests and has a built badge
 * Include an architectural diagram showing how the project works
 
