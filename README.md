@@ -27,9 +27,12 @@ For the ETL-Query lab:
 
 #### Tasks:
 
-* Convert the main.py into a command-line tool that lets you run each step independently
+* :heavy_check_mark: fork the project and get it working, connecting to a SQL database
+* :heavy_check_mark: Convert the main.py into a command-line tool that lets you run each step independently
 * Make sure your project passes lint/tests and has a built badge
-* Include an architectural diagram showing how the project works
+* :heavy_check_mark: Include an architectural diagram showing how the project works
+* Perform CRUD operations
+* Write at least two different SQL queries
 
 #### Reflection Questions
 
