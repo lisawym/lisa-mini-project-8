@@ -28,3 +28,6 @@ jobs:
         run: make format
       - name: deploy
         run: make deploy
+
+      - name: Run ETL script
+        run: make --transform_load
