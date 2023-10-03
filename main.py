@@ -6,9 +6,11 @@ from mylib.query import query
 
 # Define the command-line arguments
 parser = argparse.ArgumentParser()
-parser.add_argument('--extract', action='store_true', help='Extract the data.')
-parser.add_argument('--transform_load', action='store_true', help='Transform and load the data.')
-parser.add_argument('--query', action='store_true', help='Query the data.')
+parser.add_argument("--extract", action="store_true", help="Extract the data.")
+parser.add_argument(
+    "--transform_load", action="store_true", help="Transform and load the data."
+)
+parser.add_argument("--query", action="store_true", help="Query the data.")
 
 # Parse the command-line arguments
 args = parser.parse_args()
