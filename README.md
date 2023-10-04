@@ -1,4 +1,4 @@
-[![CI](https://github.com/nogibjj/mini-project5-lisa/actions/workflows/cicd.yml/badge.svg)](https://github.com/nogibjj/mini-project5-lisa/actions/workflows/cicd.yml)
+[![CI](https://github.com/nogibjj/mini-project5-lisa/actions/workflows/cicd.yml/badge.svg?branch=main)](https://github.com/nogibjj/mini-project5-lisa/actions/workflows/cicd.yml)
 
 ## SQLite Lab
 
