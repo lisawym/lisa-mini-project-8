@@ -39,12 +39,13 @@ For the ETL-Query lab:
 #### Reflection Questions
 
 * **What challenges did you face when extracting, transforming, and loading the data? How did you overcome them?**
-* I had some issue extracting the data. I realized instead of just using a connection. I can use a API to get access of data
+  * I had some issue extracting the data. I realized instead of just using a connection. I can use a API to get access of data
 * **What insights or new knowledge did you gain from querying the SQLite database?**
 * How can SQLite and SQL help make data analysis more efficient? What are the limitations?
 * **What AI assistant did you use and how did it compare to others you've tried? What are its strengths and weaknesses?**
-* I used Google Bard, it have newer data, I feel it is better than ChatGPT, but it still give me incorrect code sometime.
-* If you could enhance this lab, what would you add or change? What other data would be interesting to load and query?
+  * I used Google Bard, it have newer data, I feel it is better than ChatGPT, but it still give me incorrect code sometime.
+* **If you could enhance this lab, what would you add or change? What other data would be interesting to load and query?**
+  * I want to merge a dataset with another one, to gain more insight of the data
 
 ##### Challenge Exercises
 
