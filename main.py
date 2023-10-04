@@ -21,4 +21,4 @@ if args.extract:
 elif args.transform_load:
     load_and_split()
 elif args.query:
-    query()
+    query("OfferDB.db")
