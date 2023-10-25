@@ -1,4 +1,5 @@
 import argparse
+import psutil
 
 from mylib.extract import extract
 from mylib.transform_load import load_and_split
@@ -17,6 +18,14 @@ args = parser.parse_args()
 
 # Perform the requested ETL task
 if args.extract:
+    process = psutil.Process()
+    memory_info = process.memory_info()
+
+# Get the total memory used in MB
+    total_memory_used_mb = memory_info.rss / 1024**2
+
+# Print the total memory used
+    print(f"Total memory used: {total_memory_used_mb:.2f} MB")
     extract()
 elif args.transform_load:
     load_and_split()
