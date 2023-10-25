@@ -1,5 +1,6 @@
 [![CI](https://github.com/nogibjj/mini-project5-lisa/actions/workflows/cicd.yml/badge.svg?branch=main)](https://github.com/nogibjj/mini-project5-lisa/actions/workflows/cicd.yml)
 
+[![Rust CI/CD](https://github.com/nogibjj/lisa-mini-project-8/actions/workflows/rust-cicd.yml/badge.svg)](https://github.com/nogibjj/lisa-mini-project-8/actions/workflows/rust-cicd.yml)
 ## SQLite Lab
 
 ![image](https://github.com/nogibjj/mini-project5-lisa/assets/46847817/ea1edc79-ee86-4e5e-a224-b484862ae0ae)
