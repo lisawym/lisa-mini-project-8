@@ -1,59 +1,78 @@
 [![CI](https://github.com/nogibjj/mini-project5-lisa/actions/workflows/cicd.yml/badge.svg?branch=main)](https://github.com/nogibjj/mini-project5-lisa/actions/workflows/cicd.yml)
 
 [![Rust CI/CD](https://github.com/nogibjj/lisa-mini-project-8/actions/workflows/rust-cicd.yml/badge.svg)](https://github.com/nogibjj/lisa-mini-project-8/actions/workflows/rust-cicd.yml)
-## SQLite Lab
 
-![image](https://github.com/nogibjj/mini-project5-lisa/assets/46847817/ea1edc79-ee86-4e5e-a224-b484862ae0ae)
+## Python to Rust Script Conversion Project
 
+Welcome to the Week 8 class project repository, where I have undertaken the task of rewriting a Python script for data processing in Rust. This README file provides an overview of the project, requirements, grading criteria, findings, and future work.
 
-### Lab:
+### Project Overview
 
-* Use an AI Assistant, but use a different one than you used from a previous lab (Anthropic's Claud, Bard, Copilot, CodeWhisperer, Colab AI, etc)
-* ETL-Query:  [E] Extract a dataset from URL, [T] Transform, [L] Load into SQLite Database and [Q] Query
-For the ETL-Query lab:
-## [E] Extract a dataset 
-* Extract a dataset from a URL like Kaggle or data.gov. JSON or CSV formats work well.
-* I extracted the data from a dataset hosted on GitHub. 
-* I tried to load a Kaggle database earlier, but it is protected and requires me to install Kaggle package to load the data. But there is some issue with the package. So I resorted to using a GitHub dataset.
+In this project, I aimed to take an existing Python script for data processing and rewrite it in Rust. The primary objectives were to highlight improvements in terms of speed and resource usage achieved by transitioning to Rust, a system-level programming language known for its performance and efficiency.
 
-## [T] Transform the data 
-* Transform the data by cleaning, filtering, enriching, etc. to get it ready for analysis.
-* In this project, I subset the data into training and test datasets randomly based on a random seed.
+### Requirements
+
+To successfully complete this project, I followed these requirements:
+
+- **Rewrite in Rust:** I took an existing Python script and translated it into Rust.
+
+- **Highlight Improvements:** I focused on demonstrating improvements in terms of processing speed and resource usage when comparing the Rust implementation to the original Python script.
 
 
-## [L] Load the transformed data 
-*  Load the transformed data into a SQLite database table using Python's SQLite3 module.
-*  Load the two tables, training and test to the dataset separately
-  
-## [Q] Write and execute SQL queries 
-*  Write and execute SQL queries on the SQLite database to analyze and retrieve insights from the data.
+### Data Processing Workflow
 
-#### Tasks:
+In both the Python and Rust projects, I extracted data from a dataset hosted on GitHub and followed these steps:
 
-* :heavy_check_mark: fork the project and get it working, connecting to a SQL database
-* :heavy_check_mark: Convert the main.py into a command-line tool that lets you run each step independently
-* :heavy_check_mark: Make sure your project passes lint/tests and has a built badge
-* :heavy_check_mark: Include an architectural diagram showing how the project works
-* :heavy_check_mark: Perform CRUD operations
-* :heavy_check_mark: Write at least two different SQL queries
+1. **Data Extraction:** I collected data from the GitHub dataset.
 
-#### Reflection Questions
+2. **Data Transformation:** The data was transformed as necessary to prepare it for further analysis.
 
-* **What challenges did you face when extracting, transforming, and loading the data? How did you overcome them?**
-  * I had some issue extracting the data. I realized instead of just using a connection. I can use a API to get access of data
-* **What insights or new knowledge did you gain from querying the SQLite database?**
-* How can SQLite and SQL help make data analysis more efficient? What are the limitations?
-* **What AI assistant did you use and how did it compare to others you've tried? What are its strengths and weaknesses?**
-  * I used Google Bard, it have newer data, I feel it is better than ChatGPT, but it still give me incorrect code sometime.
-* **If you could enhance this lab, what would you add or change? What other data would be interesting to load and query?**
-  * I want to merge a dataset with another one, to gain more insight of the data
+3. **Data Loading:** I loaded the transformed data into a SQLite database table using Python's SQLite3 module for the Python project and Rusqlite for the Rust project.
+   
+4.  **Data Query:** SQL queries were written and executed on the SQLite database to analyze and retrieve insights from the data.
 
-##### Challenge Exercises
+5. **Get Metrics Data:** I measure the performance of both projects.
 
-* Add more transformations to the data before loading it into SQLite. Ideas: join with another dataset, aggregate by categories, normalize columns.
-* Write a query to find correlated fields in the data. Print the query results nicely formatted.
-* Create a second table in the SQLite database and write a join query with the two tables.
-* Build a simple Flask web app that runs queries on demand and displays results.
-* Containerize the application using Docker so the database and queries can be portable
+6.  **Command-line Interface:** I provided a command-line interface for both Python and Rust, enabling the following command-line argument:
 
+   - `--all`: If this flag is provided, the script runs all ETL (Extract, Transform, Load, Query) tasks.
+
+
+### Structure of the Project
+* Python: `main.py` for main code, `test_main.py` for test codes, `/mylib` for library codes, `test`files, `MakeFile` and `Requirement.txt` for packages to install
+* Rust: under `rust_etl` folder: `src` for source code, `Cargo.toml` for cargo setup, 
+* Other: `cicd.yml` for GitHub Actions, `data` folder for csv extracted, `OfferDB.db` for created SQLite DB
+
+### Performance Metrics
+
+To measure the performance of both projects, I collected the following metrics:
+
+#### Python Metrics
+
+- Time taken: 0.15 seconds
+- Memory used: 21.79 MB
+- Average CPU usage: 8.6%
+
+#### Rust Metrics
+
+- Total virtual memory used: 294 MB
+- Time elapsed in extract, transform, and query: 29.03 seconds
+
+### Findings
+
+My findings showed that, surprisingly, the Rust implementation did not outperform the Python script in terms of execution time. This could be attributed to my limited familiarity with Rust, which may have led to less efficient code.
+
+### Future Work
+
+In future projects, I plan to address the following:
+
+- **Improve Rust Pipeline:** I aim to make the Rust project fully functional and more accessible, possibly by addressing folder structure issues.
+
+- **Optimize Rust Code:** I will analyze what went wrong in the Rust implementation and work on optimizing the code for better performance.
+
+- **Create Rust Binaries:** I intend to learn how to compile Rust code into binaries, making it easier to execute from the command line.
+
+- **Add Linting, Formatting, and Testing:** In future Rust-related projects, I will incorporate best practices such as code linting, formatting, and testing to ensure code quality and reliability.
+
+Thank you for exploring my Python to Rust Script Conversion Project. I look forward to continued improvements and learning experiences in the realm of Rust programming.
 
