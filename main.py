@@ -1,6 +1,5 @@
 import argparse
 import psutil
-import os
 import time
 
 from mylib.extract import extract
