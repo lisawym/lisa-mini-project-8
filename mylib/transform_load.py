@@ -19,6 +19,7 @@ def load_and_split(dataset="data/offer.csv", train_ratio=0.8, seed=42):
 
     # Insert the data into the database
     c.executemany("INSERT INTO OfferDB VALUES (?,?, ?, ?)", payload)
+"""
 
     # Shuffle the data
     data = c.fetchall()
@@ -45,6 +46,8 @@ def load_and_split(dataset="data/offer.csv", train_ratio=0.8, seed=42):
 
     return "train_data.csv", "test_data.csv"
 
+"""
+
 
 # Load and split the data, using the random seed 42
-train_data_file, test_data_file = load_and_split(seed=42)
+#train_data_file, test_data_file = load_and_split(seed=42)
