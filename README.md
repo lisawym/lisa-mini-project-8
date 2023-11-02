@@ -37,11 +37,26 @@ In both the Python and Rust projects, I extracted data from a dataset hosted on 
 
    - `--all`: If this flag is provided, the script runs all ETL (Extract, Transform, Load, Query) tasks.
 
+### Project Structure
 
-### Structure of the Project
-* Python: `main.py` for main code, `test_main.py` for test codes, `/mylib` for library codes, `test`files, `MakeFile` and `Requirement.txt` for packages to install
-* Rust: under `rust_etl` folder: `src` for source code, `Cargo.toml` for cargo setup, 
-* Other: `cicd.yml` for GitHub Actions, `data` folder for csv extracted, `OfferDB.db` for created SQLite DB
+To maintain a well-organized project, I have structured it as follows:
+
+#### Python
+- `main.py`: Main Python code for data processing.
+- `test_main.py`: Test scripts for code validation.
+- `/mylib`: Library codes and utility functions.
+- `test` folder: Additional test files for thorough testing.
+- `MakeFile`: Configuration for building the project.
+- `Requirement.txt`: A list of required packages and dependencies.
+
+#### Rust (Under `rust_etl` Folder)
+- `src`: Rust source code for data processing.
+- `Cargo.toml`: Configuration for Rust's package manager, Cargo.
+
+#### Other
+- `cicd.yml`: GitHub Actions workflow for Continuous Integration and Continuous Deployment (CI/CD).
+- `data` folder: A directory to store extracted data in CSV format.
+- `OfferDB.db`: SQLite database file created to store processed data.
 
 ### Performance Metrics
 
@@ -54,9 +69,9 @@ To measure the performance of both projects, I collected the following metrics:
 - Average CPU usage: 8.6%
 
 #### Rust Metrics
-
-- Total virtual memory used: 294 MB
 - Time elapsed in extract, transform, and query: 29.03 seconds
+- Total virtual memory used: 294 MB
+
 
 ### Findings
 
