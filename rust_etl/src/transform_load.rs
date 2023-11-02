@@ -1,10 +1,10 @@
-use rand::Rng;
+//use rand::Rng;
 use std::fs::File;
 use std::io::prelude::*;
 use std::io::BufReader;
 use rand::SeedableRng;
 use rusqlite::{params, Connection};
-use std::fs;
+//use std::fs;
 
 pub fn main() -> Result<(), Box<dyn std::error::Error>> {
     let seed = 42;
@@ -57,12 +57,14 @@ pub fn main() -> Result<(), Box<dyn std::error::Error>> {
                 continue;
             }
         };
+
+        stmt.execute(params![iindex, ean, stock, price]);
         //printing inserstion code to debug
         //println!("Inserting: {}, {}, {}, {}", iindex, ean, stock, price);
-        match stmt.execute(params![iindex, ean, stock, price]) {
-            Ok(_) => println!("Insert successful"),
-            Err(e) => println!("Error inserting: {:?}", e),
-        }
+        // match stmt.execute(params![iindex, ean, stock, price]) {
+        //     Ok(_) => println!("Insert successful"),
+        //     Err(e) => println!("Error inserting: {:?}", e),
+        // }
         buffer.clear();
         
     }
