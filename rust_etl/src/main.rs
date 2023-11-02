@@ -69,7 +69,7 @@ pub fn main() {
             query::query().expect("Failed to run query");
         },
         Some("all_metrics") => {
-            run_all_20().expect("Failed to run all_20");
+            run_all_metrics().expect("Failed to run all_20");
         },
         _ => println!("Invalid command provided"),
     };

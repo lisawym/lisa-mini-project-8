@@ -30,4 +30,4 @@ all: install lint test format deploy
 
 
 rust-run:
-	cargo run --manifest-path rust_etl/Cargo.toml
+	cargo run --manifest-path rust_etl/Cargo.toml extract
